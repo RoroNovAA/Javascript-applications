@@ -30,9 +30,11 @@ body {
     text-align: center;
 }
 
- .number-input {
-    text-indent: 5px;
-} 
+.display-value {
+    padding: 2px 5px;
+    background-color: #fff;
+    border: 1px solid gray;
+}
 
 .reset-button {
     width: 100px;
