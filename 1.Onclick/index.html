@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onclick Project - 1</title>
+
+    <!-- CSS -->
+    <style>
+        body {
+            background-color: black;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .button-container {
+            background-color: whitesmoke;
+            padding: 20px 50px;
+            width: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 8px;
+        }
+
+        button {
+            color: #fff;
+            background-color: #80669d;
+            border: none;
+            border-radius: 5px;
+            padding: 15px 19px;
+        }
+    </style>
+</head>
+<body>
+    <div class="button-container">
+        <button class="changeButton" onclick= changeBgColor()>
+            Click to change color
+        </button>
+    </div>
+
+    <!-- JAVASCRIPT -->
+    <script>
+        let arr = ["red", "yellow", "black","violet", "orange"]
+
+        function randomColor(){
+            return Math.floor(Math.random() *arr.length);
+        }
+
+        function changeBgColor(){
+            document.body.style.backgroundColor = arr[randomColor()];
+        }
+
+
+
+    </script>
+</body>
+</html>
