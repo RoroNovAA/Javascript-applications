@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OnKey Press project -5</title>
+
+    <!-- CSS STYLE -->
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            background-color:darkorchid;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        h1 {
+            color:black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Please any key for the "onkeypress" event listener to function</h1>
+    </div>
+
+    <!-- JAVASCRIPT -->
+    <script>
+        document.body.addEventListener("keypress", () => {
+            alert("This is an example of presskey event lister.")
+        })
+    </script>
+</body>
+</html>
