@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Keydown & Keyup project - 6</title>
+
+    <!-- CSS STYLING -->
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        width: 100%;
+        height: 100vh;
+        background-color: orangered;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .container {
+        background-color: #fff;
+        padding: 25px 40px;
+        border-radius: 12px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      button {
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <p>Press either Keyup or Keydown</p>
+      <button class="keydown-button">Key</button>
+    </div>
+
+    <!-- JAVASCRIPT -->
+    <script>    
+      function keyupColorChange() {
+        document.querySelector(".keydown-button").style.backgroundColor = "orangered";
+      }
+
+      function keydownColorChange() {
+        document.querySelector(".keydown-button").style.backgroundColor = "yellow";
+      }
+
+      document.addEventListener("keydown", keydownColorChange);
+      document.addEventListener("keyup", keyupColorChange);
+    </script>
+  </body>
+</html>
